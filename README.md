@@ -1,1 +1,23 @@
 # Enhancing-Traffic-Sign-Recognition
+## 1.1. Problem Formulation
+In automated driving, cameras play a crucial role in detecting various objects, such as traffic signals, roadways, individual vehicles, and traffic police gestures. Many autonomous vehicles and driver assistance systems are equipped with dashboard-mounted cameras that collect real-time images or videos of traffic signs. These visual inputs are then integrated into the vehicle's system and processed by machine learning models.
+
+However, the captured images are often subject to several types of degradation, which can significantly impair their clarity and quality. Motion blur from the vehicle's movement can smear critical details of traffic signs, making them difficult to recognize accurately. Additionally, distortions from the camera lens can warp the shape and appearance of signs, further complicating their identification. These optical issues present a major challenge for traffic sign recognition systems.
+
+Adverse weather conditions exacerbate these problems. For instance, snow can cover traffic signs and reduce visibility, while rain can cause water droplets on the lens, leading to blurred and obscured images. Fog can lower contrast, making it hard to distinguish signs from the background. These environmental factors hinder the performance of machine learning models designed for traffic sign recognition, as they rely on clear and precise images to function correctly. 
+## 1.2.  Scope of the Work 
+The primary objective of this research is to develop an advanced traffic sign recognition system that performs reliably in real-time noisy environments. The proposed method leverages the Nonsubsampled Contourlet Transform (NSCT) technique for image decomposition to effectively suppress noise, coupled with Multi-Cue Inhibition (MCI) for generating clear and distinct contours of traffic signs.
+
+The research methodology involves systematically introducing various types of noise, such as motion blur, lens distortions, and adverse weather conditions, into the collected traffic sign images. The NSCT technique will be employed to decompose these noisy images, aiming to suppress the noise while preserving essential features. Subsequently, the Multi-Cue Inhibition (MCI) method will be applied to delineate distinct contours of traffic signs from the decomposed images. After this, machine learning models will be developed and rigorously trained on the contours to ensure accurate traffic sign recognition. The performance of the proposed method will be evaluated by comparing its recognition accuracy with those of baseline models in real-time scenarios.
+
+## 1.3. Objective 
+The primary aim of this research is to develop an innovative traffic sign recognition system capable of operating effectively in real-time, noisy environments. By utilizing advanced techniques such as Nonsubsampled Contourlet Transform (NSCT) for image decomposition and Multi-Cue Inhibition (MCI) for contour enhancement, the proposed method seeks to significantly enhance the clarity and precision of traffic sign detection.
+
+The research methodology involves systematically exploring various noise factors commonly encountered in real-world driving situations, including motion blur, lens distortions, and adverse weather conditions. Through the strategic application of the NSCT technique, the collected traffic sign images will undergo careful decomposition, aimed at reducing noise while preserving essential features crucial for accurate recognition. Subsequent implementation of the MCI method will further refine the processed images, enhancing the clarity of traffic sign contours.
+
+Following this meticulous noise suppression process, the research aims to develop machine learning models specifically tailored to perform effectively on the processed images. Through thorough training and optimization, these models will be finely tuned to ensure robust and reliable traffic sign recognition. The ultimate goal is to validate the effectiveness of the proposed method through comprehensive evaluation against baseline models in real-time scenarios, thereby contributing to improved safety and efficiency in autonomous driving systems.
+
+## 1.4. Significant Contribution 
+Proposal of a novel noise suppression layer: Combining Nonsubsampled Contourlet Transform (NSCT) and Multi-cue Inhibition (MCI), offering enhanced noise reduction capabilities.
+ConVets trained on clean images effectively classify noisy testing dataset.
+Superior performance in uncontrolled environments: Outperforming state-of-the-art architectures, particularly excelling in challenging environmental conditions.
